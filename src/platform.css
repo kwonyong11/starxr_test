@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+/*
+////////////////////////
+캔버스 사이즈 조절
+///////////////////////
+*/
+
+/* 캔버스 사이즈*/
+.canvas-wrapper {
+	width:100vw;
+	height:100vh;
+}
+
+#platform-main-canvas {
+width:100%; 
+height:100%;
+	background-color: #dadada;
+}
+
+/*
+////////////////////////
+사이드 메뉴 조절
+///////////////////////
+*/
+
+
+/* 메뉴 포지션*/
+#platform-side-menu-top-right,
+#platform-side-menu-left,
+#platform-side-menu-bottom {
+	position: fixed;
+}
+
+#platform-side-menu-left{
+    top: 150px;
+}
+
+#platform-side-menu-top-right{
+    right: 5px;
+    top: 130px;
+}
+
+#platform-side-menu-bottom{
+    left: 50%;
+    bottom: 0;
+}
+
+/* 메뉴 ul 설정*/
+#platform-side-menu-bottom ul,
+#platform-side-menu-top-right ul,
+#platform-side-menu-left ul{
+	list-style-type: none;
+	display: flex;
+    justify-content: space-around;
+    font-size: 80px;
+}
+
+#platform-side-menu-left ul{
+	flex-direction: column;
+    height: 80vh;
+}
+
+#platform-side-menu-top-right ul{
+	flex-direction: row;
+	width: 230px;
+}
+
+/* 사이드 메뉴 li 사이즈*/
+#platform-side-menu-top-right li,
+#platform-side-menu-left li,
+#platform-side-menu-bottom li{
+	height: 100px;
+	width: 100px;
+
+}
+#platform-side-menu-left li{
+    border-radius: 0 30px 30px 0px;
+	background-color: #C4C4C4;
+	color: #2D2D2D;
+}
+#platform-side-menu-top-right li{
+    border-radius: 50%;
+	background-color: #fff;
+}
+
+#platform-side-menu-bottom li{
+    border-radius: 30% 30% 0 0;
+	background-color: #C4C4C4;
+	color: #2D2D2D;
+}
+
+
+/* 사이드 메뉴 글씨 설정*/
+#platform-side-menu-bottom li i,
+#platform-side-menu-left li i,
+#platform-side-menu-top-right li i{
+    position: absolute;
+}
+
+#platform-side-menu-left li i{
+    margin: 11px 0px 0px 6px;
+}
+
+#platform-side-menu-top-right li i{
+    margin: 8px 0px 0px 17px;
+}
+
+#platform-side-menu-bottom li i {
+    margin: 13px 0 0 22px;
+}
+
+
+
+
+#header {
+	width: 100%;
+	height: 10vh;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<title>Insert title here</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+	div {
+		width: 60vw;
+		height: 60vh;
+		margin: auto;
+	}
+	
+	canvas {
+		width: 100%;
+		height: 100%;
+		background-image: url("qwe.png");
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+</style>
+<script>
+window.onload = function(){
+	
+		let elem = document.getElementById('myCanvas');	
+		
+		// 클릭시 마우스 현재 좌표를 받아오는 함수
+		elem.addEventListener("click", function(event) {
+			console.log((event.layerX*200/elem.clientWidth)-100, 100-(event.layerY*200/elem.clientHeight));
+		});
+}
+</script>
+</head>
+<body>
+	<div>
+		<canvas id="myCanvas">
+		</canvas>
+	</div>
+</body>
+</html>
